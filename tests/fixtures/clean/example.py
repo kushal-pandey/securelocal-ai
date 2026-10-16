@@ -14,4 +14,4 @@ def run_tool():
     return subprocess.run(["tool", "--version"], check=True)
 
 
-API_KEY = "replace-me-with-a-real-secret"
+API_KEY = "FAKE_TEST_CREDENTIAL_NOT_REAL"

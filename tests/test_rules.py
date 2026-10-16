@@ -15,6 +15,8 @@ class RuleTests(unittest.TestCase):
             set(RULES),
             {"SLA001", "SLA002", "SLA003", "SLA004", "SLA005", "SLA006", "SLA007"},
         )
+        
+    
 
     def test_dynamic_execution_is_detected(self):
         findings = analyze_source("eval(user_input)\nexec(source)\n", "sample.py")
@@ -96,6 +98,11 @@ class RuleTests(unittest.TestCase):
             'name = "a long ordinary string value"\n'
         )
         self.assertEqual(self._rule_ids(source), set())
+        
+    def test_explicit_fake_test_credential_is_not_reported(self):
+        source = 'API_KEY = "FAKE_TEST_CREDENTIAL_NOT_REAL"\n'
+        self.assertEqual(self._rule_ids(source), set())
+        
 
     def test_weak_hash_algorithms_are_detected(self):
         source = (

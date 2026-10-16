@@ -13,6 +13,7 @@ SECRET_NAME = re.compile(
 )
 PLACEHOLDER_SECRET = re.compile(
     r"(?:your[_ -]|replace[_ -]?me|example|sample|placeholder|dummy|changeme|"
+    r"fake[_ -]test(?:[_ -][a-z0-9]+)*|"
     r"<[^>]+>|\*{3,}|x{4,})",
     re.IGNORECASE,
 )

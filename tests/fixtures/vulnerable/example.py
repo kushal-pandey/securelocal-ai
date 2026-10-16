@@ -9,7 +9,7 @@ exec(user_input)
 pickle.loads(payload)
 pickle.load(source)
 subprocess.run(command, shell=True)
-API_KEY = "FAKE_TEST_SECRET_NOT_REAL_12345"
+API_KEY = "testcredential123456789"
 hashlib.md5(data)
 hashlib.sha1(data)
 hashlib.new("md5", data)
