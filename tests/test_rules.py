@@ -47,7 +47,7 @@ class RuleTests(unittest.TestCase):
         self.assertEqual([(item.rule_id, item.line) for item in findings], [("SLA003", 3)])
 
     def test_hardcoded_secret_evidence_is_redacted(self):
-        secret = "sk_live_7f3a9c2d8e4b6a1f"
+        secret = "synthetic_test_secret_value_123456"
         findings = analyze_source(f'API_TOKEN = "{secret}"\n', "sample.py")
         self.assertEqual(len(findings), 1)
         self.assertEqual(findings[0].rule_id, "SLA004")
