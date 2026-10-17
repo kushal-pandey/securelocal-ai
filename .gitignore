@@ -22,3 +22,5 @@ dist/
 *.report.md
 reports/*.json
 reports/*.md
+chat.json
+tests/chat.json

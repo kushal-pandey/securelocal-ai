@@ -103,7 +103,7 @@ From the project root:
 python -m unittest discover -s tests -v
 ```
 
-The current test suite contains **46 tests**, covering scanner behavior, security rules, redaction, report generation, Ollama client behavior, and GUI error handling.
+The current test suite contains **51 tests**, covering scanner behavior, security rules, redaction, report generation, Ollama client behavior, and GUI error handling.
 
 To run a syntax compilation check:
 
@@ -216,7 +216,7 @@ Read [docs/SECURITY.md](docs/SECURITY.md) for the detailed threat model and data
 
 **Working prototype with automated tests and optional local AI assistance.**
 
-The current implementation has a 46-test automated suite and has been manually exercised with local Ollama inference. These checks demonstrate functionality, not comprehensive security effectiveness.
+The current implementation has a 51-test automated suite and has been manually exercised with local Ollama inference. These checks demonstrate functionality, not comprehensive security effectiveness.
 
 Potential future improvements include additional reviewed detection rules, broader test corpora, structured finding suppression, accessibility improvements, and expanded language support.
 
